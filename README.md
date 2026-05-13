@@ -29,6 +29,54 @@ Skills in this repo are designed to be installed in [Claude Cowork](https://clau
 
 **When to use it:** Say something like "I want to build a website for my [profession]" or "help me plan a professional service website" and Claude will load the skill automatically.
 
+### `brand-strategist`
+
+**What it does:** Takes a completed client intake questionnaire and produces a full brand strategy — positioning statement, target audience profile, emotional strategy per page, tone of voice, messaging pillars, and trust mechanisms. Everything goes into `product-brain.md`.
+
+**Who it's for:** Use this before writing a single word of copy or making any design decisions. The designer and writer both depend on what this skill produces.
+
+**When to use it:** Share the completed questionnaire and say "run the brand strategy" or "fill in the product brain."
+
+---
+
+### `web-designer`
+
+**What it does:** Translates brand strategy into a complete visual system — typography, color palette, spacing, components, imagery direction, and responsive behavior. All decisions go into `design-rules.md`.
+
+**Who it's for:** Use this after the brand strategy is locked. The developer reads `design-rules.md` to implement the design.
+
+**When to use it:** "Design the site" or "set up the visual system" after `product-brain.md` is complete.
+
+---
+
+### `content-writer`
+
+**What it does:** Writes all copy that appears on the site — headlines, body text, service descriptions, About page bio, FAQ answers, CTAs, and meta tags. Covers every page, in the right register, for the right audience.
+
+**Who it's for:** Use after the brand strategy is complete. For bilingual sites, writes Hebrew and Russian as independent drafts (not translations).
+
+**When to use it:** "Write the homepage copy," "draft the about page," "write the FAQ," or any request to write text for the site.
+
+---
+
+### `web-developer`
+
+**What it does:** Implements the site using Next.js, Tailwind CSS, shadcn/ui, and Vercel. Follows a 6-sprint delivery checklist from scaffold to launch. Reads `design-rules.md` and `technical-decisions.md` to translate design into code.
+
+**Who it's for:** Use after the design system is locked. Handles all code: components, i18n routing, forms, SEO, and deployment.
+
+**When to use it:** "Build the site," "implement the design," or "start sprint 1."
+
+---
+
+### `growth-specialist`
+
+**What it does:** Handles everything that makes the site findable — keyword strategy, on-page SEO, structured data, Google Business Profile, analytics setup, and content strategy. Covers both Hebrew and Russian audiences with separate strategies per language.
+
+**Who it's for:** Use in parallel with the final development sprint, or immediately after launch.
+
+**When to use it:** "Set up SEO," "add analytics," "help me get found on Google," or "what should I do after the site goes live."
+
 ---
 
 ## How to install
