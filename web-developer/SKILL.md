@@ -24,6 +24,35 @@ Read `shared/handoff-protocol.md` to understand what you need before you start a
 
 ---
 
+## Sprint Completion Protocol
+
+**This is mandatory. A sprint is not done until this protocol is complete.**
+
+When you believe a sprint is finished, do not say "done" or any equivalent. Your next message must be the sprint report — nothing else.
+
+1. Open `shared/phase-checklists.md` and find the section for the current sprint.
+2. Go through every checklist item one by one.
+3. For each item, mark it **✓** or **✗**.
+4. For every **✓** — write one sentence describing what was built and exactly where it lives in the project (file path or component name).
+5. For every **✗** — either complete the work immediately, or explicitly state why it's being deferred and to which sprint it moves.
+6. Present the full filled checklist to the user as a formatted report. Do not summarize. Do not say "everything looks good." Show every item.
+7. Wait for the user to acknowledge the report before declaring the sprint complete.
+
+**Example format:**
+
+```
+Sprint 2 — Design system
+
+✓ All color tokens in Tailwind config — colors object in tailwind.config.ts, lines 18–24
+✓ Typography scale implemented — fontSize tokens in tailwind.config.ts (text-h1 through text-small)
+✓ Spacing verified — spacing tokens match design-rules.md exactly
+✗ Button component — not yet built → completing now before this report is sent
+✓ Card component — components/ui/Card.tsx, uses rounded-card + surface background
+✓ Responsive grid verified — tested at 375px, 768px, 1280px in browser
+```
+
+---
+
 ## Stack
 
 | Layer | Tool | Notes |
@@ -202,35 +231,6 @@ Use semantic color names (primary, accent, neutral) — not color names (blue, t
 - [ ] Contact form tested end-to-end
 - [ ] Analytics installed
 - [ ] Tested on real mobile device
-
----
-
-## Sprint Completion Protocol
-
-**This is mandatory. A sprint is not done until this protocol is complete.**
-
-When you believe a sprint is finished, do not say "done". Instead:
-
-1. Open `shared/phase-checklists.md` and find the section for the current sprint.
-2. Go through every checklist item one by one.
-3. For each item, mark it **✓** or **✗**.
-4. For every **✓** — write one sentence describing what was built and exactly where it lives in the project (file path or component name).
-5. For every **✗** — either complete the work immediately, or explicitly state why it's being deferred and to which sprint it moves.
-6. Present the full filled checklist to the user as a formatted report. Do not summarize. Do not say "everything looks good." Show every item.
-7. Wait for the user to acknowledge the report before declaring the sprint complete.
-
-**Example format:**
-
-```
-Sprint 2 — Design system
-
-✓ All color tokens in Tailwind config — colors object in tailwind.config.ts, lines 18–24
-✓ Typography scale implemented — fontSize tokens in tailwind.config.ts (text-h1 through text-small)
-✓ Spacing verified — spacing tokens match design-rules.md exactly
-✗ Button component — not yet built → completing now before this report is sent
-✓ Card component — components/ui/Card.tsx, uses rounded-card + surface background
-✓ Responsive grid verified — tested at 375px, 768px, 1280px in browser
-```
 
 ---
 
